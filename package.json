@@ -1,0 +1,25 @@
+{
+  "name": "Pre",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint .",
+    "validate": "npm ls"
+  },
+  "author": "",
+  "license": "ISC",
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ],
+  "devDependencies": {
+    "precommit-hook": "^3.0.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp": "^3.9.0",
+    "jshint-stylish": "^2.0.1",
+    "map-stream": "0.0.6"
+  }
+}
