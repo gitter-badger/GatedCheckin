@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "validate": "gulp"
+    "validate": "gulp",
+    "lint": "jshint ."
   },
   "author": "",
   "license": "ISC",
