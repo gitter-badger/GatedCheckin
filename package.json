@@ -4,16 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "jshint .",
+    "lint": "gulp lint",
     "validate": "npm ls"
   },
   "author": "",
   "license": "ISC",
   "pre-commit": [
-    "lint",
-    "validate",
-    "test"
+    "lint"
   ],
   "devDependencies": {
     "precommit-hook": "^3.0.0",
