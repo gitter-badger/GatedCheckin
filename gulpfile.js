@@ -17,3 +17,8 @@ gulp.task('lint', function () {
         .pipe(lint.reporter('jshint-stylish'))
         .pipe(exitOnJshintError);
 });
+
+gulp.task('default',function(){
+    'use strict';
+    console.log('you are awesome');/*jshint ignore:line*/
+});

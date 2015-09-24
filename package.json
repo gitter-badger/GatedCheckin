@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "gulp lint",
-    "validate": "npm ls"
+    "validate": "gulp"
   },
   "author": "",
   "license": "ISC",
   "pre-commit": [
-    "lint"
+    "validate"
   ],
   "devDependencies": {
     "precommit-hook": "^3.0.0",
