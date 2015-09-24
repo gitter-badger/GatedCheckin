@@ -7,7 +7,7 @@ describe('Person', function () {
         it('can greet people', function () {
             var p1 = new Person('Shardul'),
                 p2 = new Person('Arihant');
-            p1.greet(p2).should.equal("HelloArihant");
+            p1.greet(p2).should.equal("Hello Arihant");
         });
     });
 });

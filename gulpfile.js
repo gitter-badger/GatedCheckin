@@ -1,24 +1,22 @@
 var gulp = require('gulp'),
-    lint = require('gulp-jshint');
-
-var map = require('map-stream');
-var exitOnJshintError = map(function (file) {
-    'use strict';
-    if (!file.jshint.success) {
-        console.error('jshint failed'); /*jshint ignore:line*/
-        process.exit(1); /*jshint ignore:line*/
-    }
-});
+    lint = require('gulp-jshint'),
+    tests = require('gulp-mocha');
 
 gulp.task('lint', function () {
     'use strict';
     return gulp.src('app.js')
         .pipe(lint('.jshintrc'))
         .pipe(lint.reporter('jshint-stylish'))
-        .pipe(exitOnJshintError);
+        .pipe(lint.reporter('fail'));
 });
 
-gulp.task('default',function(){
+gulp.task('default', function () {
     'use strict';
-    console.log('you are awesome');/*jshint ignore:line*/
+    console.log('you are awesome'); /*jshint ignore:line*/
+});
+
+gulp.task('testSuite', function () {
+    'use strict';
+    return gulp.src('testy.js')
+        .pipe(tests());
 });
