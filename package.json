@@ -1,27 +1,29 @@
 {
-  "name": "Pre",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "validate": "gulp",
-    "lint": "gulp lint",
-    "test": "gulp testSuite"
-  },
-  "author": "",
-  "license": "ISC",
-  "pre-commit": [
+    "name": "Pre",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "validate": "gulp",
+        "lint": "gulp lint",
+        "test": "gulp testSuite",
+        "coverage": "gulp testCoverage"
+    },
+    "author": "",
+    "license": "ISC",
+    "pre-commit": [
     "lint",
-    "test"
+    "test",
+    "coverage"
   ],
-  "devDependencies": {
-    "gulp-jshint": "^1.11.2",
-    "gulp": "^3.9.0",
-    "jshint-stylish": "^2.0.1",
-    "map-stream": "0.0.6",
-    "pre-commit": "^1.1.1",
-    "chai": "^3.3.0",
-    "gulp-mocha": "^2.1.3",
-    "gulp-istanbul": "^0.10.0"
-  }
+    "devDependencies": {
+        "gulp-jshint": "^1.11.2",
+        "gulp": "^3.9.0",
+        "jshint-stylish": "^2.0.1",
+        "map-stream": "0.0.6",
+        "pre-commit": "^1.1.1",
+        "chai": "^3.3.0",
+        "gulp-mocha": "^2.1.3",
+        "gulp-istanbul": "^0.10.0"
+    }
 }
