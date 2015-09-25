@@ -1,4 +1,4 @@
-angular.module("DS",[]).controller("homeController", ["$scope", function ($scope) {
+angular.module("DS", []).controller("homeController", ["$scope", function ($scope) {
     "use strict";
     $scope.book = {
         title: "Programming in C",
